@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <style>
+        /* body {
+            background: #999;
+        } */
+
         .invoice {
             margin-bottom: 15px;
             border-top: 1px solid;
@@ -20,30 +24,72 @@
         .border {
             border: 1px solid #e5e5e5;
         }
+
+        .main-heading-style {
+            color: #8485D6;
+        }
+
+        .secondary {
+            color: #8c8b8b;
+            font-size: 22px;
+        }
+
+        .info-box {
+            background-color: #D4D3FF;
+        }
+
+        .amount {
+            font-size: 34px;
+            color: #008001;
+        }
     </style>
 </head>
 
 <body>
+
+
     <div class="container" id="invoice">
+
         <div class="row">
             <div class="col-md-1"></div>
+
+
             <div class="col-md-10 border">
-                <div class="row">
-                    <div class="col-md-12 invoice text-center text-primary">
-                        <h2>Hello World</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-left">
-                        <p><strong>Invoice No: </strong> 1234567910</p>
-                        <p><strong>Date of Issue:</strong> 15/01/2020</p>
-                        <p>Testing</p>
+                <div class="row mt-5 mb-5">
+
+
+                    <div class="col-md-6">
+                        <h1 class="main-heading-style">Benjamin Dordoigne</h1>
+                        <p class="secondary">02-02-2020 / INV No 0415</p>
                     </div>
 
                     <div class="col-md-6 text-right">
-                        <p><strong>Invoice No: </strong> 1234567910</p>
-                        <p><strong>Date of Issue:</strong> 15/01/2020</p>
-                        <p>Testing</p>
+                        <p class="address">
+                            15 Main Road<br />
+                            Another Line<br />
+                            SW1 1SW<br />
+                            United Kingdom<br />
+
+
+
+
+                        </p>
+                    </div>
+
+                </div>
+                <div class="row info-box p-4  mb-5">
+                    <div class="col-md-6 text-left">
+                        <p><strong>Client Name </strong> </p>
+                        <p class="address">
+                            15 Main Road<br />
+                            Another Line<br />
+                            SW1 1SW<br />
+                            United Kingdom<br />
+                    </div>
+
+                    <div class="col-md-6 text-right">
+                        <p><strong>Balance Due: </strong></p>
+                        <p class="amount">$1000</p>
                     </div>
                 </div>
                 <div class="row">
@@ -71,12 +117,11 @@
                         </table>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-11 text-right mt-2 mb-2">Signature</div>
-                </div>
             </div>
         </div>
-    </div>
+
+
+    </div><!-- ending invoice div!-->
     <div class="container">
         <div class="row ">
             <div class="col-md-12 text-center mb-4">
